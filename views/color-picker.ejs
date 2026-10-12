@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+</head>
+<body>
+    <h1><%= title %></h1>
+    <form>
+        <label for="color-picker">Háttér színe:</label>
+        <input type="color" id="color-picker" name="txcolor" value="<%= txcolor %>">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Választott szín:</h2>
+    <div style="font-size: 20px; color: <%= txcolor %>;"><%= txcolor %></div>   
+</body>
+</html>

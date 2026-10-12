@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <style>
+         input, select{
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1><%= title %></h1>
+
+    <form>
+        <label for="type">Termék típus</label>
+        <select name="type">
+            <option value="Food">Élelmiszer</option>
+            <option value="Book">Könyv</option>
+            <option value="Electronic">Elektronikai termék</option>
+        </select>
+        <br>
+        <label for="price">Ár</label>
+        <input type="text" name="price" value="<%= price %>">
+        <button type="submit">Submit</button>
+    </form>
+
+    <h3>Végső ár: <strong><%= fullprice %></strong></h3>
+</body>
+</html>
